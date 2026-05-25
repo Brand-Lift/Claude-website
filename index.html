@@ -1,1 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pride International School – Nurturing Excellence, Building Futures. CBSE Affiliated School offering world-class education from Nursery to Class 12." />
+  <title>Pride International School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <!-- ============================================================
+       SECTION 1 — HEADER
+  ============================================================ -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a class="logo" href="#home">
+        <div class="logo-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4L2 14l18 10 18-10L20 4z" fill="#f59e0b"/>
+            <path d="M2 14v10l18 10 18-10V14" stroke="#f59e0b" stroke-width="1.5" fill="none"/>
+            <path d="M35 14v8" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="35" cy="24" r="2" fill="#f59e0b"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Pride International</span>
+          <span class="logo-sub">School</span>
+        </div>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#home"      class="nav-link active" data-section="home">Home</a>
+        <a href="#about"     class="nav-link" data-section="about">About</a>
+        <a href="#academics" class="nav-link" data-section="academics">Academics</a>
+        <a href="#staff"     class="nav-link" data-section="staff">Staff</a>
+        <a href="#gallery"   class="nav-link" data-section="gallery">Gallery</a>
+        <a href="#fees"      class="nav-link" data-section="fees">Fees</a>
+        <a href="#admission" class="nav-link" data-section="admission">Admission</a>
+        <a href="#faqs"      class="nav-link" data-section="faqs">FAQs</a>
+        <a href="#contact"   class="nav-link" data-section="contact">Contact</a>
+      </nav>
+      <a href="#admission" class="btn btn-primary header-cta">Apply Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       SECTION 2 — FULLSCREEN MOBILE MENU OVERLAY
+  ============================================================ -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <button class="menu-close" id="menuClose" aria-label="Close Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <div class="mobile-menu-logo">
+      <svg viewBox="0 0 40 40" fill="none" width="48" height="48">
+        <path d="M20 4L2 14l18 10 18-10L20 4z" fill="#f59e0b"/>
+        <path d="M2 14v10l18 10 18-10V14" stroke="#f59e0b" stroke-width="1.5" fill="none"/>
+      </svg>
+      <span>Pride International School</span>
+    </div>
+    <nav class="mobile-nav">
+      <a href="#home"      class="mobile-nav-link" data-index="0">Home</a>
+      <a href="#about"     class="mobile-nav-link" data-index="1">About</a>
+      <a href="#academics" class="mobile-nav-link" data-index="2">Academics</a>
+      <a href="#staff"     class="mobile-nav-link" data-index="3">Staff</a>
+      <a href="#gallery"   class="mobile-nav-link" data-index="4">Gallery</a>
+      <a href="#fees"      class="mobile-nav-link" data-index="5">Fees</a>
+      <a href="#admission" class="mobile-nav-link" data-index="6">Admission</a>
+      <a href="#faqs"      class="mobile-nav-link" data-index="7">FAQs</a>
+      <a href="#contact"   class="mobile-nav-link" data-index="8">Contact</a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/>
+      </svg>
+      <a href="tel:+911234567890">+91 12345 67890</a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SECTION 3 — HERO SLIDER
+  ============================================================ -->
+  <section class="hero-slider" id="home">
+    <div class="slides-wrapper">
+
+      <div class="slide active" id="slide-0">
+        <div class="slide-bg" style="background-image:url('Screenshot_20260524_112642.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-content container">
+          <span class="slide-badge">Welcome to Pride International School</span>
+          <h1 class="slide-heading">Nurturing Excellence,<br/>Building Bright Futures</h1>
+          <p class="slide-sub">We believe every child is gifted. Our mission is to unlock that potential through world-class education, values, and innovation.</p>
+          <div class="slide-btns">
+            <a href="#admission" class="btn btn-gold">Apply Now</a>
+            <a href="#about" class="btn btn-outline-white">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" id="slide-1">
+        <div class="slide-bg" style="background-image:url('Screenshot_20260524_112636.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-content container">
+          <span class="slide-badge">CBSE Affiliated | Est. 2001</span>
+          <h1 class="slide-heading">World-Class Facilities<br/>for Holistic Growth</h1>
+          <p class="slide-sub">From state-of-the-art laboratories to sprawling sports grounds — we provide the environment every student deserves to thrive.</p>
+          <div class="slide-btns">
+            <a href="#admission" class="btn btn-gold">Apply Now</a>
+            <a href="#about" class="btn btn-outline-white">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" id="slide-2">
+        <div class="slide-bg" style="background-image:url('Screenshot_20260524_112628.jpg');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-content container">
+          <span class="slide-badge">Admissions Open 2025–26</span>
+          <h1 class="slide-heading">Join Our Family of<br/>Achievers &amp; Innovators</h1>
+          <p class="slide-sub">Limited seats available. Secure your child's future today with Pride International School's renowned academic excellence.</p>
+          <div class="slide-btns">
+            <a href="#admission" class="btn btn-gold">Apply Now</a>
+            <a href="#about" class="btn btn-outline-white">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="slider-arrow arrow-prev" id="sliderPrev" aria-label="Previous Slide">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button class="slider-arrow arrow-next" id="sliderNext" aria-label="Next Slide">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    <div class="slider-dots">
+      <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="dot" data-slide="2" aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4 — STATS BAR
+  ============================================================ -->
+  <section class="stats-bar" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <div class="stat-body">
+            <div class="stat-num-row"><span class="stat-number" data-target="1800">0</span><span class="stat-suffix">+</span></div>
+            <span class="stat-label">Students Enrolled</span>
+          </div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="stat-body">
+            <div class="stat-num-row"><span class="stat-number" data-target="85">0</span><span class="stat-suffix">+</span></div>
+            <span class="stat-label">Expert Teachers</span>
+          </div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <div class="stat-body">
+            <div class="stat-num-row"><span class="stat-number" data-target="23">0</span><span class="stat-suffix">+</span></div>
+            <span class="stat-label">Years of Excellence</span>
+          </div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <div class="stat-body">
+            <div class="stat-num-row"><span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span></div>
+            <span class="stat-label">Board Results</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 5 — ABOUT SCHOOL
+  ============================================================ -->
+  <section class="about-section section-pad" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap reveal">
+          <img src="Screenshot_20260524_112642.jpg" alt="Pride International School Building" class="about-img" />
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <div>
+              <span class="badge-year">Est. 2001</span>
+              <span class="badge-text">Years of Trust</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <span class="section-label">About Our School</span>
+          <h2 class="section-title">A Legacy of Academic Excellence &amp; Values</h2>
+          <p class="about-para">Pride International School has been a cornerstone of quality education since 2001. Affiliated with CBSE, we offer a comprehensive curriculum from Nursery to Class 12, blending academic rigour with holistic development. Our campus is a vibrant community where curiosity is celebrated and every student is empowered to reach their highest potential.</p>
+          <p class="about-para">Our dedicated faculty, modern infrastructure, and student-first philosophy make us one of the most trusted institutions in the region. We go beyond textbooks to instil critical thinking, creativity, and character — preparing students not just for examinations but for life.</p>
+          <ul class="highlight-list">
+            <li><span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></span>CBSE Affiliated with consistent 100% board results</li>
+            <li><span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></span>State-of-the-art smart classrooms &amp; digital labs</li>
+            <li><span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></span>Experienced faculty with child-centred teaching approach</li>
+            <li><span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></span>Extensive co-curricular &amp; sports programs for all-round growth</li>
+          </ul>
+          <a href="#admission" class="btn btn-primary mt-24">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+    </section>
+      <!-- ============================================================
+       SECTION 6 — PRINCIPAL'S MESSAGE
+  ============================================================ -->
+  <section class="principal-section section-pad" id="principal">
+    <div class="container">
+      <div class="principal-wrap reveal">
+        <div class="quote-mark">"</div>
+        <img src="Screenshot_20260524_112636.jpg" alt="Dr. Meera Sharma — Principal, Pride International School" class="principal-photo" />
+        <blockquote class="principal-quote">
+          At Pride International School, we do not merely teach subjects — we nurture souls. Every child who walks through our gates carries infinite potential, and it is our sacred responsibility to kindle that flame of curiosity, compassion, and courage within them. Together, we are building tomorrow's leaders today.
+        </blockquote>
+        <div class="principal-info">
+          <h3 class="principal-name">Dr. Meera Sharma</h3>
+          <span class="principal-qual">M.Ed., Ph.D. in Educational Psychology | Principal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 7 — ACADEMICS / PROGRAMS
+  ============================================================ -->
+  <section class="academics-section section-pad" id="academics">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Academics</span>
+        <h2 class="section-title">Programs We Offer</h2>
+        <p class="section-sub">From early childhood to senior secondary — we offer thoughtfully designed programs that inspire learning at every stage.</p>
+      </div>
+      <div class="programs-grid">
+
+        <div class="program-card reveal">
+          <div class="program-img-wrap">
+            <img src="Screenshot_20260524_112642.jpg" alt="Pre-Primary Program" class="program-img" />
+            <div class="program-overlay"></div>
+          </div>
+          <div class="program-body">
+            <h3 class="program-name">Pre-Primary (Nursery – UKG)</h3>
+            <p class="program-desc">Play-based learning that builds social skills, language, and early numeracy through joyful exploration and creativity.</p>
+          </div>
+        </div>
+
+        <div class="program-card reveal">
+          <div class="program-img-wrap">
+            <img src="Screenshot_20260524_112636.jpg" alt="Primary School Program" class="program-img" />
+            <div class="program-overlay"></div>
+          </div>
+          <div class="program-body">
+            <h3 class="program-name">Primary School (Class 1 – 5)</h3>
+            <p class="program-desc">A strong academic foundation with emphasis on reading, mathematics, science, and value-based education.</p>
+          </div>
+        </div>
+
+        <div class="program-card reveal">
+          <div class="program-img-wrap">
+            <img src="Screenshot_20260524_112628.jpg" alt="Middle School Program" class="program-img" />
+            <div class="program-overlay"></div>
+          </div>
+          <div class="program-body">
+            <h3 class="program-name">Middle School (Class 6 – 8)</h3>
+            <p class="program-desc">Comprehensive CBSE curriculum with project-based learning, critical thinking, and introduction to specialised subjects.</p>
+          </div>
+        </div>
+
+        <div class="program-card reveal">
+          <div class="program-img-wrap">
+            <img src="Screenshot_20260524_112642.jpg" alt="Secondary School Program" class="program-img" />
+            <div class="program-overlay"></div>
+          </div>
+          <div class="program-body">
+            <h3 class="program-name">Secondary (Class 9 – 10)</h3>
+            <p class="program-desc">Board-focused preparation with expert guidance, regular assessments, and personalised mentoring for top results.</p>
+          </div>
+        </div>
+
+        <div class="program-card reveal">
+          <div class="program-img-wrap">
+            <img src="Screenshot_20260524_112636.jpg" alt="Science Stream" class="program-img" />
+            <div class="program-overlay"></div>
+          </div>
+          <div class="program-body">
+            <h3 class="program-name">Senior Secondary – Science (11–12)</h3>
+            <p class="program-desc">Physics, Chemistry, Biology &amp; Mathematics with dedicated labs and JEE/NEET oriented coaching support.</p>
+          </div>
+        </div>
+
+        <div class="program-card reveal">
+          <div class="program-img-wrap">
+            <img src="Screenshot_20260524_112628.jpg" alt="Commerce Stream" class="program-img" />
+            <div class="program-overlay"></div>
+          </div>
+          <div class="program-body">
+            <h3 class="program-name">Senior Secondary – Commerce (11–12)</h3>
+            <p class="program-desc">Accountancy, Business Studies, Economics &amp; Mathematics preparing students for CA, MBA and commerce careers.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 8 — FACILITIES
+  ============================================================ -->
+  <section class="facilities-section section-pad" id="facilities">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Facilities</span>
+        <h2 class="section-title">World-Class Infrastructure</h2>
+        <p class="section-sub">Every facility at Pride International School is designed with one purpose — to give our students the very best environment to learn, grow, and excel.</p>
+      </div>
+      <div class="facilities-grid">
+
+        <div class="facility-card reveal">
+          <div class="facility-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+            </svg>
+          </div>
+          <h3 class="facility-title">Modern Library</h3>
+          <p class="facility-desc">A vast collection of 15,000+ books, journals, e-resources, and a dedicated reading zone that nurtures a lifelong love for learning.</p>
+        </div>
+
+        <div class="facility-card reveal">
+          <div class="facility-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/>
+            </svg>
+          </div>
+          <h3 class="facility-title">Science Laboratories</h3>
+          <p class="facility-desc">Fully equipped Physics, Chemistry, and Biology labs with modern instruments enabling hands-on experimental learning.</p>
+        </div>
+
+        <div class="facility-card reveal">
+          <div class="facility-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3 class="facility-title">Sports &amp; Athletics</h3>
+          <p class="facility-desc">Olympic-standard cricket ground, basketball court, badminton hall, swimming pool, and professional coaching staff.</p>
+        </div>
+
+        <div class="facility-card reveal">
+          <div class="facility-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <h3 class="facility-title">Smart Classrooms</h3>
+          <p class="facility-desc">Every classroom is equipped with interactive smart boards, high-speed internet, and digital learning tools for an immersive experience.</p>
+        </div>
+
+        <div class="facility-card reveal">
+          <div class="facility-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="3" width="15" height="13" rx="1"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+              <circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+            </svg>
+          </div>
+          <h3 class="facility-title">Safe Transport</h3>
+          <p class="facility-desc">A fleet of 18 GPS-tracked, air-conditioned school buses covering all major routes with trained drivers and attendants.</p>
+        </div>
+
+        <div class="facility-card reveal">
+          <div class="facility-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 11l19-9-9 19-2-8-8-2z"/>
+            </svg>
+          </div>
+          <h3 class="facility-title">Hygienic Cafeteria</h3>
+          <p class="facility-desc">A spacious, FSSAI-certified canteen serving nutritious, freshly prepared meals and snacks in a clean and welcoming environment.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 9 — STAFF / TEACHERS
+  ============================================================ -->
+  <section class="staff-section section-pad" id="staff">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Team</span>
+        <h2 class="section-title">Meet Our Educators</h2>
+        <p class="section-sub">Our faculty are not just teachers — they are mentors, guides, and role models deeply committed to every student's success.</p>
+      </div>
+      <div class="staff-grid">
+
+        <div class="staff-card reveal">
+          <div class="staff-photo-wrap">
+            <img src="Screenshot_20260524_112642.jpg" alt="Mr. Arjun Kapoor — Mathematics Teacher" class="staff-photo" />
+          </div>
+          <h3 class="staff-name">Mr. Arjun Kapoor</h3>
+          <span class="staff-role">Mathematics &amp; Science</span>
+        </div>
+
+        <div class="staff-card reveal">
+          <div class="staff-photo-wrap">
+            <img src="Screenshot_20260524_112636.jpg" alt="Ms. Priya Nair — English Teacher" class="staff-photo" />
+          </div>
+          <h3 class="staff-name">Ms. Priya Nair</h3>
+          <span class="staff-role">English Language &amp; Literature</span>
+        </div>
+
+        <div class="staff-card reveal">
+          <div class="staff-photo-wrap">
+            <img src="Screenshot_20260524_112628.jpg" alt="Dr. Rajan Verma — Physics Teacher" class="staff-photo" />
+          </div>
+          <h3 class="staff-name">Dr. Rajan Verma</h3>
+          <span class="staff-role">Physics &amp; Chemistry</span>
+        </div>
+
+        <div class="staff-card reveal">
+          <div class="staff-photo-wrap">
+            <img src="Screenshot_20260524_112642.jpg" alt="Mrs. Sunita Rao — Social Studies Teacher" class="staff-photo" />
+          </div>
+          <h3 class="staff-name">Mrs. Sunita Rao</h3>
+          <span class="staff-role">Social Studies &amp; EVS</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+    <!-- ============================================================
+       SECTION 10 — GALLERY
+  ============================================================ -->
+  <section class="gallery-section section-pad" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Gallery</span>
+        <h2 class="section-title">Life at Pride International School</h2>
+        <p class="section-sub">A glimpse into the vibrant, joyful, and inspiring world of our school community.</p>
+      </div>
+      <div class="gallery-grid">
+
+        <div class="gallery-card reveal">
+          <img src="Screenshot_20260524_112642.jpg" alt="Annual Day Celebration" class="gallery-img" />
+          <div class="gallery-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="32" height="32">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="gallery-card reveal">
+          <img src="Screenshot_20260524_112636.jpg" alt="Science Exhibition" class="gallery-img" />
+          <div class="gallery-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="32" height="32">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="gallery-card reveal">
+          <img src="Screenshot_20260524_112628.jpg" alt="Sports Day" class="gallery-img" />
+          <div class="gallery-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="32" height="32">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="gallery-card reveal">
+          <img src="Screenshot_20260524_112642.jpg" alt="Cultural Program" class="gallery-img" />
+          <div class="gallery-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="32" height="32">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="gallery-card reveal">
+          <img src="Screenshot_20260524_112636.jpg" alt="Classroom Learning" class="gallery-img" />
+          <div class="gallery-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="32" height="32">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="gallery-card reveal">
+          <img src="Screenshot_20260524_112628.jpg" alt="Library Activities" class="gallery-img" />
+          <div class="gallery-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="32" height="32">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="gallery-card reveal">
+          <img src="Screenshot_20260524_112642.jpg" alt="Award Ceremony" class="gallery-img" />
+          <div class="gallery-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="32" height="32">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="gallery-card reveal">
+          <img src="Screenshot_20260524_112636.jpg" alt="Field Trip" class="gallery-img" />
+          <div class="gallery-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="32" height="32">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="gallery-card reveal">
+          <img src="Screenshot_20260524_112628.jpg" alt="Graduation Ceremony" class="gallery-img" />
+          <div class="gallery-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="32" height="32">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 11 — FEE STRUCTURE
+  ============================================================ -->
+  <section class="fees-section section-pad" id="fees">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Fee Structure</span>
+        <h2 class="section-title">Transparent &amp; Affordable Fees</h2>
+        <p class="section-sub">We believe quality education should be accessible. Our fee structure is designed to be transparent with no hidden charges.</p>
+      </div>
+      <div class="fee-table-wrap reveal">
+        <table class="fee-table">
+          <thead>
+            <tr>
+              <th>Class / Category</th>
+              <th>Monthly Fee</th>
+              <th>Annual Fee</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Nursery – UKG</td><td>₹ 1,800</td><td>₹ 22,000</td><td><span class="status-badge">Open</span></td></tr>
+            <tr><td>Class 1 – 3</td><td>₹ 2,200</td><td>₹ 26,500</td><td><span class="status-badge">Open</span></td></tr>
+            <tr><td>Class 4 – 5</td><td>₹ 2,500</td><td>₹ 30,000</td><td><span class="status-badge">Open</span></td></tr>
+            <tr><td>Class 6 – 8</td><td>₹ 2,900</td><td>₹ 35,000</td><td><span class="status-badge">Open</span></td></tr>
+            <tr><td>Class 9 – 10</td><td>₹ 3,400</td><td>₹ 41,000</td><td><span class="status-badge">Open</span></td></tr>
+            <tr><td>Class 11 – 12</td><td>₹ 3,900</td><td>₹ 47,000</td><td><span class="status-badge">Open</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fee-note reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" style="display:inline;vertical-align:middle;margin-right:6px;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <strong>Note:</strong> Fees listed are indicative. Actual fees may vary based on the academic session and chosen stream. Transport, uniform, and activity fees are billed separately. Sibling discounts and merit scholarships are available — please contact the admissions office for full details.
+      </p>
+      <div class="fee-cta reveal">
+        <a href="#admission" class="btn btn-primary">Enquire for Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 12 — ADMISSION / ENQUIRY FORM
+  ============================================================ -->
+  <section class="admission-section section-pad" id="admission">
+    <div class="container">
+      <div class="admission-grid">
+        <div class="admission-info reveal">
+          <span class="section-label-light">Admissions Open 2025–26</span>
+          <h2 class="admission-title">Start Your Child's Journey With Us</h2>
+          <p class="admission-sub">Take the first step towards giving your child an extraordinary education. Fill in the form and our admissions team will reach out within 24 hours.</p>
+          <ul class="trust-points">
+            <li>
+              <div class="trust-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <div><strong>Flexible Admission Schedule</strong><span>Open throughout the year for all classes</span></div>
+            </li>
+            <li>
+              <div class="trust-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div><strong>Quick Response Within 24 Hours</strong><span>Our team will contact you promptly</span></div>
+            </li>
+            <li>
+              <div class="trust-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div><strong>Safe &amp; Nurturing Environment</strong><span>CCTV secured campus with trained staff</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="admission-form-wrap reveal">
+          <div class="form-card">
+            <h3 class="form-title">Send an Enquiry</h3>
+            <form id="admissionForm" novalidate>
+              <div class="form-group">
+                <label for="fStudentName">Student Name <span class="req">*</span></label>
+                <input type="text" id="fStudentName" placeholder="Enter student's full name" autocomplete="name" />
+                <span class="field-error" id="errStudentName"></span>
+              </div>
+              <div class="form-group">
+                <label for="fParentName">Parent / Guardian Name <span class="req">*</span></label>
+                <input type="text" id="fParentName" placeholder="Enter parent's full name" autocomplete="name" />
+                <span class="field-error" id="errParentName"></span>
+              </div>
+              <div class="form-group">
+                <label for="fMobile">Mobile Number <span class="req">*</span></label>
+                <input type="tel" id="fMobile" placeholder="Enter 10-digit mobile number" maxlength="10" />
+                <span class="field-error" id="errMobile"></span>
+              </div>
+              <div class="form-group">
+                <label for="fClass">Class Applying For <span class="req">*</span></label>
+                <select id="fClass">
+                  <option value="">— Select Class —</option>
+                  <option value="Nursery">Nursery</option>
+                  <option value="LKG">LKG</option>
+                  <option value="UKG">UKG</option>
+                  <option value="Class 1">Class 1</option>
+                  <option value="Class 2">Class 2</option>
+                  <option value="Class 3">Class 3</option>
+                  <option value="Class 4">Class 4</option>
+                  <option value="Class 5">Class 5</option>
+                  <option value="Class 6">Class 6</option>
+                  <option value="Class 7">Class 7</option>
+                  <option value="Class 8">Class 8</option>
+                  <option value="Class 9">Class 9</option>
+                  <option value="Class 10">Class 10</option>
+                  <option value="Class 11 – Science">Class 11 – Science</option>
+                  <option value="Class 11 – Commerce">Class 11 – Commerce</option>
+                  <option value="Class 12 – Science">Class 12 – Science</option>
+                  <option value="Class 12 – Commerce">Class 12 – Commerce</option>
+                  <option value="Other">Other</option>
+                </select>
+                <span class="field-error" id="errClass"></span>
+              </div>
+              <div class="form-group">
+                <label for="fMsg">Message (Optional)</label>
+                <textarea id="fMsg" rows="4" placeholder="Any additional information or questions..."></textarea>
+              </div>
+              <button type="button" class="btn btn-whatsapp" onclick="submitAdmission()">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                  <path d="M12.05 2C6.495 2 2 6.495 2 12.05c0 1.87.487 3.633 1.34 5.162L2 22l4.914-1.31A10.01 10.01 0 0012.05 22C17.606 22 22 17.505 22 11.95 22 6.494 r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <h3 class="facility-title">Sports &amp; Athletics</h3>
+          <p class="facility-desc">Olympic-standard cricket ground, basketball court, badminton hall, swimming pool, and professional coaching staff for holistic fitness.</p>
+        </div>
+        <div class="facility-card reveal">
+          <div class="facility-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3 class="facility-title">Smart Classrooms</h3>
+          <p class="facility-desc">Every classroom is equipped with interactive smart boards, high-speed internet, and digital learning tools for an immersive experience.</p>
+        </div>
+        <div class="facility-card reveal">
+          <div class="facility-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="1"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+          <h3 class="facility-title">Safe Transport</h3>
+          <p class="facility-desc">A fleet of 18 GPS-tracked, air-conditioned school buses covering all major routes with trained drivers and dedicated attendants.</p>
+        </div>
+        <div class="facility-card reveal">
+          <div class="facility-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div>
+          <h3 class="facility-title">Hygienic Cafeteria</h3>
+          <p class="facility-desc">A spacious, FSSAI-certified canteen serving nutritious, freshly prepared meals and snacks in a clean and welcoming environment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAFF / TEACHERS -->
+  <section class="staff-section section-pad" id="staff">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Team</span>
+        <h2 class="section-title">Meet Our Educators</h2>
+        <p class="section-sub">Our faculty are not just teachers — they are mentors, guides, and role models deeply committed to every student's success.</p>
+      </div>
+      <div class="staff-grid">
+        <div class="staff-card reveal">
+          <div class="staff-photo-wrap">
+            <img src="Screenshot_20260524_112642.jpg" alt="Mr. Arjun Kapoor — Mathematics Teacher" class="staff-photo" />
+          </div>
+          <h3 class="staff-name">Mr. Arjun Kapoor</h3>
+          <span class="staff-role">Mathematics &amp; Science</span>
+        </div>
+        <div class="staff-card reveal">
+          <div class="staff-photo-wrap">
+            <img src="Screenshot_20260524_112636.jpg" alt="Ms. Priya Nair — English Teacher" class="staff-photo" />
+          </div>
+          <h3 class="staff-name">Ms. Priya Nair</h3>
+          <span class="staff-role">English Language &amp; Literature</span>
+        </div>
+        <div class="staff-card reveal">
+          <div class="staff-photo-wrap">
+            <img src="Screenshot_20260524_112628.jpg" alt="Dr. Rajan Verma — Physics Teacher" class="staff-photo" />
+          </div>
+          <h3 class="staff-name">Dr. Rajan Verma</h3>
+          <span class="staff-role">Physics &amp; Chemistry</span>
+        </div>
+        <div class="staff-card reveal">
+          <div class="staff-photo-wrap">
+            <img src="Screenshot_20260524_112642.jpg" alt="Mrs. Sunita Rao — Social Studies Teacher" class="staff-photo" />
+          </div>
+          <h3 class="staff-name">Mrs. Sunita Rao</h3>
+          <span class="staff-role">Social Studies &amp; EVS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- ============================================================
+       SECTION 14 — CONTACT
+  ============================================================ -->
+  <section class="contact-section section-pad" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Contact Us</span>
+        <h2 class="section-title">Get In Touch With Us</h2>
+        <p class="section-sub">We'd love to hear from you. Reach out via call, WhatsApp, email, or visit us on campus.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-cards reveal">
+          <a href="tel:+911234567890" class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-card-label">Call Us</span>
+              <span class="contact-card-value">+91 12345 67890</span>
+            </div>
+          </a>
+          <a href="https://wa.me/911234567890?text=Hello%2C%20I%20want%20to%20enquire%20about%20admission." target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-card-icon green">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.05 2C6.495 2 2 6.495 2 12.05c0 1.87.487 3.633 1.34 5.162L2 22l4.914-1.31A10.01 10.01 0 0012.05 22C17.606 22 22 17.505 22 11.95 22 6.494 17.605 2 12.05 2zm0 18.13a8.09 8.09 0 01-4.131-1.131l-.295-.176-3.065.817.82-3.003-.192-.308A8.086 8.086 0 013.87 12.05c0-4.512 3.669-8.18 8.18-8.18 4.512 0 8.18 3.668 8.18 8.18 0 4.511-3.668 8.18-8.18 8.18z"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-card-label">WhatsApp Us</span>
+              <span class="contact-card-value">+91 12345 67890</span>
+            </div>
+          </a>
+          <a href="mailto:info@prideinternational.edu.in" class="contact-card">
+            <div class="contact-card-icon gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-card-label">Email Us</span>
+              <span class="contact-card-value">info@prideinternational.edu.in</span>
+            </div>
+          </a>
+          <div class="contact-card no-hover">
+            <div class="contact-card-icon purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-card-label">School Hours</span>
+              <span class="contact-card-value">Mon–Sat: 8:00 AM – 2:30 PM</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map-wrap reveal">
+          <div class="map-address-block">
+            <div class="map-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Visit Us</h4>
+              <p>Pride International School, 42 Education Avenue,<br/>Knowledge Park, New Delhi – 110 001<br/>Near City Central Metro Station</p>
+            </div>
+          </div>
+          <div class="map-placeholder">
+            <div class="map-placeholder-inner">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" width="48" height="48"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Map loads here</span>
+            </div>
+          </div>
+          <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary map-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            View on Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 15 — FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="footer-main container">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">
+          <svg viewBox="0 0 40 40" fill="none" width="36" height="36"><path d="M20 4L2 14l18 10 18-10L20 4z" fill="#f59e0b"/><path d="M2 14v10l18 10 18-10V14" stroke="#f59e0b" stroke-width="1.5" fill="none"/></svg>
+          <div><span class="footer-logo-name">Pride International</span><span class="footer-logo-sub">School</span></div>
+        </div>
+        <p class="footer-tagline">Nurturing Excellence, Building Futures. A CBSE affiliated institution committed to holistic education since 2001.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#academics">Academics</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#staff">Our Staff</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#fees">Fee Structure</a></li>
+          <li><a href="#admission">Admissions</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Contact Info</h4>
+        <ul class="footer-contact">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg><a href="tel:+911234567890">+91 12345 67890</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@prideinternational.edu.in">info@prideinternational.edu.in</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>42 Education Avenue, Knowledge Park,<br/>New Delhi – 110 001</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Mon–Sat: 8:00 AM – 2:30 PM</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2025 Pride International School. All Rights Reserved.</p>
+        <p>Made with <span style="color:#f59e0b;">♥</span> for better education</p>
+        <button class="footer-back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><polyline points="18 15 12 9 6 15"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SECTION 16 — FLOATING WHATSAPP -->
+  <a href="https://wa.me/911234567890?text=Hello%2C%20I%20want%20to%20enquire%20about%20admission." target="_blank" rel="noopener noreferrer" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.05 2C6.495 2 2 6.495 2 12.05c0 1.87.487 3.633 1.34 5.162L2 22l4.914-1.31A10.01 10.01 0 0012.05 22C17.606 22 22 17.505 22 11.95 22 6.494 17.605 2 12.05 2zm0 18.13a8.09 8.09 0 01-4.131-1.131l-.295-.176-3.065.817.82-3.003-.192-.308A8.086 8.086 0 013.87 12.05c0-4.512 3.669-8.18 8.18-8.18 4.512 0 8.18 3.668 8.18 8.18 0 4.511-3.668 8.18-8.18 8.18z"/></svg>
+    <span class="float-tooltip">Chat on WhatsApp</span>
+  </a>
+
+  <!-- SECTION 17 — FLOATING CALL -->
+  <a href="tel:+911234567890" class="float-btn float-call" aria-label="Call Us Now">
+    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="26" height="26"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
+    <span class="float-tooltip">Call Us Now</span>
+  </a>
+
+  <!-- SECTION 18 — BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+                                                                                                                               </html>
